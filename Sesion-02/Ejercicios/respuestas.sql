@@ -48,6 +48,9 @@ SELECT id_articulo, count(*) FROM venta GROUP BY id_articulo;
 
 
 -- SESION 2, EJERCICIOS
+-- Usando la base de datos classicmodels, escribe consultas que permitan responder las siguientes preguntas.
+USE classicmodels;
+
 -- 1. Dentro de la tabla employees, obten el número de empleado, apellido y nombre de todos los empleados cuyo nombre empiece con a.
 SELECT employeeNumber, lastName, firstName FROM employees WHERE firstName LIKE "a%";
 
