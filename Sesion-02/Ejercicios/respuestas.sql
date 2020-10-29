@@ -30,6 +30,7 @@ SELECT min(salario), max(salario) FROM puesto;
 
 -- 4. ¿Cuál es la suma del salario de los últimos cinco puestos agregados?
 SELECT sum(salario) FROM puesto WHERE id_puesto > (SELECT max(id_puesto) - 5 FROM puesto);
+SELECT sum(salario) FROM (SELECT salario FROM puesto ORDER BY id_puesto DESC LIMIT 5) AS total;
 
 
 -- SESION 2, RETO 3
